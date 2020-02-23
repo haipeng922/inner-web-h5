@@ -15,7 +15,7 @@
 
 }
 .div_word{
-    width:310;
+    width:310px;
     margin:0 auto;
     font-size: 24px;
     font-weight: 300;
@@ -62,7 +62,7 @@
 
 }
 .div_chat_top_word1{
-    font-size: 16px;
+    font-size: 14px;
     font-weight:600;
     float:left;
 }

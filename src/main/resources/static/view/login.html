@@ -30,6 +30,8 @@
         </div>
     </div>
 </div>
+
+<!--账户密码区域-->
 <div class="div_container_main">
     <div class="div_container_main_center">
         <div class="div_main_first">
@@ -39,7 +41,6 @@
         </div>
         <div class="div_main_second">
             <div class="search"style="float:left;">
-
                 <input id="usename" name="wd"  type="text" style="width:270px;height:30px; border:1px #d1d5da solid;border-radius:3px; ">
             </div>
         </div>
@@ -53,20 +54,22 @@
         </div>
         <div class="div_main_fouth">
             <div class="search"style="float:left;">
-
                 <input id="usename" name="wd"  type="text" style="width:270px;height:30px; border:1px #d1d5da solid;border-radius:3px; ">
             </div>
         </div>
         <div class="div_main_fifth">
-            <div class="div_fifth_button">
-                <a href="file:///C:/Users/lenovo/Desktop/knowledge/2018-9/Github/Github.html" class="div_chat_button"style="color:white;text-decoration: none;">Sign in</a>
+            <div onclick="signIn()" class="div_fifth_button">
+                <a class="div_chat_button" style="color:white;text-decoration: none;">Sign in</a>
             </div>
         </div>
-    </div>
 
+    </div>
 </div>
+
+<!--底部-->
 <div class="div_foot">
     <div class="div_foot_main">
+
         <div class="div_sixth">
             <div class="div_sixth_word1">
                 New to GitHub?
@@ -74,8 +77,8 @@
             <div class="div_sixth_word2">
                 Create an account.
             </div>
-
         </div>
+
         <div class="div_foot_tail">
             <div class="div_foot_word">
                 Terms
@@ -89,12 +92,37 @@
             <div class="div_foot_word2">
                 Contact GitHub
             </div>
-
         </div>
 
     </div>
+</div>
 
-
+<!-- 模态框（Modal） -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"
+                        aria-hidden="true">×
+                </button>
+                <h4 class="modal-title" id="myModalLabel">
+                    模态框（Modal）标题
+                </h4>
+            </div>
+            <div class="modal-body">
+                按下 ESC 按钮退出。
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default"
+                        data-dismiss="modal">关闭
+                </button>
+                <button type="button" class="btn btn-primary">
+                    提交更改
+                </button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
 
 
 <!------------------------------------------js--------------------------------------------------->
@@ -102,5 +130,7 @@
 <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
 <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+<script src="../../../../../node_modules/bootstrap/js/modal.js"></script>
+<script src="../js/login.js"></script>
 </body>
 </html>
